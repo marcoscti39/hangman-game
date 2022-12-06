@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-modal {
+  animation-name: modal-animation;
+  animation-duration: 500ms;
+}
+
+@keyframes modal-animation {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
